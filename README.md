@@ -6,6 +6,9 @@ This project is a data visualization project with live baseball statistics (mean
 
 The live data is being pulled from baseball-reference.com, and to access the data from the HTML code on that website, I have used an online tool called Jaunt, which allows for easy access to this data.
 
+Setup:
+You will first need to install Processing (processing.org). Then, you will need to install Jaunt (jaunt-api.com) and connect it to Processing. To do this, take the latest version of Jaunt and download the ZIP file. Then, open the ZIP file and locate the .jar file. Now, open a blank sketchbook in Processing and drag and drop the .jar file onto the sketchbook. Finally, you will need to connect all of the picture files. Download Logos.zip and drag and drop all of the files inside of it onto a blank sketchbook in Processing. Now, you should be all set to run the program. (Open the two pictures called "File System Part 1" and "File System Part 2" to make sure your file system looks the same.)
+
 Instructions:
 To run the program, simply hit the play button in Processing. You will need to wait for about a minute as the program compiles all of the data from baseball-reference.com. Then, the standings will show up on the left. Left click on any team’s logo to get that team’s players’ information under the “Team 1” column. The same goes for the “Team 2” column, except you need to right click. 
 
