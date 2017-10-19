@@ -30,10 +30,10 @@ boolean firstTime1 = false, firstTime2 = false;
 ArrayList<Integer> allXCoordinates = new ArrayList<Integer>(), allYCoordinates = new ArrayList<Integer>();
 // number of batters and pitchers on each time that are in allBatters and allPitchers respectively
 // do not include those with no position assigned
-int[] numOfBatters = {15, 18, 16, 18, 15, 16, 14, 18, 16, 17, 15, 15, 17, 18, 17, 
-  14, 14, 15, 16, 17, 14, 19, 16, 17, 20, 17, 16, 16, 19, 17}; // Since data is live, these need to be daily checked
-int[] numOfPitchers = {11, 10, 10, 10, 10, 10, 11, 11, 10, 10, 10, 10, 11, 11, 10, 
-  10, 11, 10, 10, 11, 11, 10, 10, 11, 10, 11, 10, 11, 10, 10}; // Since data is live, these need to be daily checked
+int[] numOfBatters = {23, 22, 24, 23, 22, 21, 17, 22, 20, 21, 22, 20, 24, 26, 19, 
+  21, 17, 23, 26, 26, 21, 22, 22, 22, 27, 23, 24, 21, 27, 25}; // Since data is live, these need to be daily checked
+int[] numOfPitchers = {10, 11, 10, 11, 11, 11, 11, 11, 11, 11, 11, 10, 11, 11, 10, 
+  11, 11, 11, 11, 11, 11, 11, 10, 11, 11, 11, 11, 11, 9, 11}; // Since data is live, these need to be daily checked
 
 void setAllWebsites() {
   for (String s : teamAcronyms) {
@@ -70,9 +70,10 @@ int toInt(String s) {
 }
 
 double toDouble(String s) {
-  if (s.equals("")) {
+  if (s.equals("") || s.equals("inf")){
     return 0.0;
-  } else {
+  } 
+  else {
     return Double.parseDouble(s);
   }
 }
